@@ -47,3 +47,19 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let statusRole ='Employee';
+let authorizationStatus;
+
+if(statusRole === 'Employee') {
+    authorizationStatus= 'Full Access granted'
+} else if(statusRole === 'Enrolled Member') {
+    authorizationStatus= 'Full Access granted and one-on-one interaction with a dietician'
+} else if(statusRole === 'Subscriber') {
+    authorizationStatus= 'Partial Access granted'
+} else{
+    authorizationStatus= 'Enroll to gain access'
+}
+
+console.log("Dietary Services: ", authorizationStatus);
+
